@@ -1,12 +1,14 @@
 public class Warrior : NPC, IAttack{
 
-    public string WeaponMastery  { get; private set; }
+    public string WeaponMastery  { get; set; }
 
     public override void move() {
         Console.WriteLine("Warrior move");
     }
 
-    public Warrior(long Id, string Name, int HP, string WeaponMastery) : base(Id, Name, HP) {
+    public Warrior() {}
+
+    public Warrior(string Name, int HP, string WeaponMastery) : base(Name, HP) {
         this.WeaponMastery = WeaponMastery;
     }
 

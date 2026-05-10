@@ -1,19 +1,23 @@
+using System.Xml.Serialization;
+
+[XmlInclude(typeof(Warrior))]
+[XmlInclude(typeof(Mage))]
 public abstract class NPC {
-    public long Id { get; private set; }
-    public string Name { get; private set; }
-    public int HP { get; private set; }
-    public Weapon? Weapon { get; private set; }
+    public string Name { get; set; }
+    public int HP { get; set; }
+    public Weapon? Weapon { get; set; }
 
     public abstract void move();
 
-    public NPC(long Id, string Name, int HP) {
-        this.Id = Id;
+    public NPC() {}
+
+    public NPC(string Name, int HP) {
         this.Name = Name;
         this.HP = HP;
     }
 
     public override string ToString() {
-        return $"[Id:{this.Id}][Name:{this.Name}][HP:{this.HP}][Equipment:{this.Weapon?.Name ?? "---"}]";
+        return $"[Name:{this.Name}][HP:{this.HP}][Equipment:{this.Weapon?.Name ?? "---"}]";
     }
 
     public void EquipWeapon(Weapon Weapon) {
