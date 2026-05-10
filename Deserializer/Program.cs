@@ -1,5 +1,6 @@
 ﻿class Program {
     static void Main(string[] args) {
-        Console.WriteLine("Siema siema");
+        Menu Menu = new Menu();
+        Menu.ShowMainMenu();
     }
 }

@@ -1,0 +1,15 @@
+C:\Users\Daras\Desktop\Zadanie4\Deserializer\obj\Debug\net10.0\Deserializer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daras\Desktop\Zadanie4\Deserializer\obj\Debug\net10.0\Deserializer.AssemblyInfoInputs.cache
+C:\Users\Daras\Desktop\Zadanie4\Deserializer\obj\Debug\net10.0\Deserializer.AssemblyInfo.cs
+C:\Users\Daras\Desktop\Zadanie4\Deserializer\obj\Debug\net10.0\Deserializer.csproj.CoreCompileInputs.cache
+C:\Users\Daras\Desktop\Zadanie4\Deserializer\obj\Debug\net10.0\Deserializer.sourcelink.json
+C:\Users\Daras\Desktop\Zadanie4\Deserializer\bin\Debug\net10.0\Deserializer.exe
+C:\Users\Daras\Desktop\Zadanie4\Deserializer\bin\Debug\net10.0\Deserializer.deps.json
+C:\Users\Daras\Desktop\Zadanie4\Deserializer\bin\Debug\net10.0\Deserializer.runtimeconfig.json
+C:\Users\Daras\Desktop\Zadanie4\Deserializer\bin\Debug\net10.0\Deserializer.dll
+C:\Users\Daras\Desktop\Zadanie4\Deserializer\bin\Debug\net10.0\Deserializer.pdb
+C:\Users\Daras\Desktop\Zadanie4\Deserializer\obj\Debug\net10.0\Deserializer.dll
+C:\Users\Daras\Desktop\Zadanie4\Deserializer\obj\Debug\net10.0\refint\Deserializer.dll
+C:\Users\Daras\Desktop\Zadanie4\Deserializer\obj\Debug\net10.0\Deserializer.pdb
+C:\Users\Daras\Desktop\Zadanie4\Deserializer\obj\Debug\net10.0\Deserializer.genruntimeconfig.cache
+C:\Users\Daras\Desktop\Zadanie4\Deserializer\obj\Debug\net10.0\ref\Deserializer.dll
