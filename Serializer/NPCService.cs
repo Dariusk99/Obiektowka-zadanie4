@@ -53,7 +53,7 @@ public class NPCService {
 
     public void SaveToXml() {
         XmlSerializer serializer = new XmlSerializer(typeof(List<NPC>));
-        TextWriter writer = new StreamWriter("enemies.xml");
+        using TextWriter writer = new StreamWriter("enemies.xml");
         serializer.Serialize(writer, this.NPCs);
     }
 }
