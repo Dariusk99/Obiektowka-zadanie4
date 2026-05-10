@@ -14,7 +14,8 @@ public class NPCService {
 
     public void LoadFromXml() {
         XmlSerializer serializer = new XmlSerializer(typeof(ArrayOfNPC));
-        using FileStream fs = new FileStream("enemies.xml", FileMode.Open);
+        string path = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "enemies.xml"));
+        using FileStream fs = new FileStream(path, FileMode.Open);
         ArrayOfNPC loadedNPCs = (ArrayOfNPC)serializer.Deserialize(fs);
 
         this.NPCs.Clear();

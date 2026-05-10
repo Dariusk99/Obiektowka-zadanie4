@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Deserializer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1cad250f78a83a9870b8895ba8e163859e8eb6f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d136003f91fba440389390a0c68e2a1bf728f0f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Deserializer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Deserializer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
