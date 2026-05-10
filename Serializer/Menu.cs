@@ -23,12 +23,22 @@ public class Menu {
                 case "2": ListEnemies(); break;
                 case "3": this.NpcService.SaveToXml(); break;
                 case "4": this.Running = false; break;
+                default:
+                    Console.WriteLine("Invalid option");
+                    return;
             }
         }
     }
 
     private void ListEnemies() {
-        foreach (NPC npc in NpcService.GetAllNPC()) {
+        List<NPC> npcs = NpcService.GetAllNPC();
+        
+        if (npcs == null || npcs.Count == 0) {
+            Console.WriteLine("No enemies found");
+            return;
+        }
+
+        foreach (NPC npc in npcs) {
             Console.WriteLine(npc);
         }
     }
