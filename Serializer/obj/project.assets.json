@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daras\\Desktop\\Serializer\\Serializer.csproj",
+      "projectUniqueName": "C:\\Users\\Daras\\Desktop\\Zadanie4\\Serializer\\Serializer.csproj",
       "projectName": "Serializer",
-      "projectPath": "C:\\Users\\Daras\\Desktop\\Serializer\\Serializer.csproj",
+      "projectPath": "C:\\Users\\Daras\\Desktop\\Zadanie4\\Serializer\\Serializer.csproj",
       "packagesPath": "C:\\Users\\Daras\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daras\\Desktop\\Serializer\\obj\\",
+      "outputPath": "C:\\Users\\Daras\\Desktop\\Zadanie4\\Serializer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Daras\\AppData\\Roaming\\NuGet\\NuGet.Config"
