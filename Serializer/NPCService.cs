@@ -53,7 +53,8 @@ public class NPCService {
 
     public void SaveToXml() {
         XmlSerializer serializer = new XmlSerializer(typeof(List<NPC>));
-        using TextWriter writer = new StreamWriter("enemies.xml");
+        string path = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "enemies.xml"));
+        using TextWriter writer = new StreamWriter(path);
         serializer.Serialize(writer, this.NPCs);
     }
 }

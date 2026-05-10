@@ -7,10 +7,10 @@
       <Name>Thunderfury</Name>
       <Damage>115</Damage>
     </Weapon>
-    <WeaponMastery>axe</WeaponMastery>
+    <WeaponMastery>sword</WeaponMastery>
   </NPC>
   <NPC xsi:type="Mage">
-    <Name>szkielet</Name>
+    <Name>skeleton</Name>
     <HP>50</HP>
     <Weapon>
       <Name>Staff of Jordan</Name>
