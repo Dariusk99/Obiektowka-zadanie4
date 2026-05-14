@@ -4,8 +4,8 @@ public class Weapon {
 
     public Weapon() {}
 
-    public Weapon(string Name, double Damage) {
-        this.Name = Name;
-        this.Damage = Damage;
+    public Weapon(string name, double damage) {
+        Name = name;
+        Damage = damage;
     }
 }

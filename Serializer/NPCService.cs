@@ -4,8 +4,8 @@ public class NPCService {
 
     private readonly List<NPC> NPCs;
 
-    public NPCService(List<NPC> NPCs) {
-        this.NPCs = NPCs;
+    public NPCService(List<NPC> npcs) {
+        NPCs = npcs;
     }
 
     public void CreateNPC() {
@@ -42,19 +42,19 @@ public class NPCService {
                 return;
         }
 
-        this.NPCs.Add(npc);
+        NPCs.Add(npc);
 
         Console.WriteLine("Created: " + npc);
     }
 
     public List<NPC> GetAllNPC() {
-        return this.NPCs;
+        return NPCs;
     }
 
     public void SaveToXml() {
         XmlSerializer serializer = new XmlSerializer(typeof(List<NPC>));
         string path = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "enemies.xml"));
         using TextWriter writer = new StreamWriter(path);
-        serializer.Serialize(writer, this.NPCs);
+        serializer.Serialize(writer, NPCs);
     }
 }

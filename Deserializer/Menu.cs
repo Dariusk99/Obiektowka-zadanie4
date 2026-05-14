@@ -3,12 +3,12 @@ public class Menu {
     private bool Running;
     private readonly NPCService NpcService;
 
-    public Menu() {
-        this.NpcService = new NPCService(new List<NPC>());
+    public Menu(NPCService npcService) {
+        NpcService = npcService;
     }
 
     public void ShowMainMenu() {
-        this.Running = true;
+        Running = true;
 
         while (Running) {
             Console.WriteLine("1. Load from XML");
@@ -18,7 +18,7 @@ public class Menu {
 
             switch(input) {
                 case "1": ListEnemiesFromXml(); break;
-                case "2": this.Running = false; break;
+                case "2": Running = false; break;
                 default:
                     Console.WriteLine("Invalid option");
                     return;

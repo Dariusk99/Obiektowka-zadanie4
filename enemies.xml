@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfNPC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <NPC xsi:type="Warrior">
+    <Name>goblin</Name>
+    <HP>100</HP>
+    <Weapon>
+      <Name>Thunderfury</Name>
+      <Damage>115</Damage>
+    </Weapon>
+    <WeaponMastery>axe</WeaponMastery>
+  </NPC>
+  <NPC xsi:type="Mage">
+    <Name>szkielet</Name>
+    <HP>50</HP>
+    <Weapon>
+      <Name>Staff of Jordan</Name>
+      <Damage>115</Damage>
+    </Weapon>
+    <ArcaneDiscipline>fire</ArcaneDiscipline>
+  </NPC>
+</ArrayOfNPC>

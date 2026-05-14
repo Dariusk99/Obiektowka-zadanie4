@@ -1,6 +1,8 @@
 ﻿class Program {
     static void Main(string[] args) {
-        Menu Menu = new Menu();
-        Menu.ShowMainMenu();
+        NPCService npcService = new NPCService(new List<NPC>());
+
+        Menu menu = new Menu(npcService);
+        menu.ShowMainMenu();
     }
 }

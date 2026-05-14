@@ -7,20 +7,20 @@ public abstract class NPC {
     public int HP { get; set; }
     public Weapon? Weapon { get; set; }
 
-    public abstract void move();
+    public abstract void Move();
 
     public NPC() {}
 
-    public NPC(string Name, int HP) {
-        this.Name = Name;
-        this.HP = HP;
+    public NPC(string name, int hp) {
+        Name = name;
+        HP = hp;
     }
 
     public override string ToString() {
-        return $"[Name:{this.Name}][HP:{this.HP}][Equipment:{this.Weapon?.Name ?? "---"}]";
+        return $"[Name:{Name}][HP:{HP}][Equipment:{Weapon?.Name ?? "---"}]";
     }
 
-    public void EquipWeapon(Weapon Weapon) {
-        this.Weapon = Weapon;
+    public void EquipWeapon(Weapon weapon) {
+        Weapon = weapon;
     }
 }

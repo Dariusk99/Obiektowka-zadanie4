@@ -3,13 +3,14 @@ public class Menu {
     private bool Running;
     private readonly NPCService NpcService;
 
-    public Menu() {
-        this.NpcService = new NPCService(new List<NPC>());
+    public Menu(NPCService npcService) {
+        NpcService = npcService;
     }
 
     public void ShowMainMenu() {
-        this.Running = true;
-
+        Running = true;
+        Console.Clear();
+        
         while (Running) {
             Console.WriteLine("1. Create enemy");
             Console.WriteLine("2. List enemies");
@@ -19,10 +20,10 @@ public class Menu {
             string input = Console.ReadLine() ?? "";
 
             switch(input) {
-                case "1": this.NpcService.CreateNPC(); break;
+                case "1": NpcService.CreateNPC(); break;
                 case "2": ListEnemies(); break;
-                case "3": this.NpcService.SaveToXml(); break;
-                case "4": this.Running = false; break;
+                case "3": NpcService.SaveToXml(); break;
+                case "4": Running = false; break;
                 default:
                     Console.WriteLine("Invalid option");
                     return;

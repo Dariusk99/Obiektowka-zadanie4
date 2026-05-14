@@ -4,12 +4,12 @@ public class NPCService {
 
     private readonly List<NPC> NPCs;
 
-    public NPCService(List<NPC> NPCs) {
-        this.NPCs = NPCs;
+    public NPCService(List<NPC> npcs) {
+        NPCs = npcs;
     }
 
     public List<NPC> GetAllNPC() {
-        return this.NPCs;
+        return NPCs;
     }
 
     public void LoadFromXml() {
@@ -18,7 +18,7 @@ public class NPCService {
         using FileStream fs = new FileStream(path, FileMode.Open);
         ArrayOfNPC loadedNPCs = (ArrayOfNPC)serializer.Deserialize(fs);
 
-        this.NPCs.Clear();
-        this.NPCs.AddRange(loadedNPCs.NPCs);
+        NPCs.Clear();
+        NPCs.AddRange(loadedNPCs.NPCs);
     }
 }
